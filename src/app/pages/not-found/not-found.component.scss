@@ -1,0 +1,64 @@
+#main-cont {
+  background-image: url("../../../assets/iconos-fondo.svg");
+  background-size: cover;
+  background-color: #e9004c;
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#first-cont {
+  background-color: #FFFFFF;
+  width: 45%;
+}
+
+#second-cont {
+  width: 65%;
+  min-width: 200px;
+}
+
+#footer-cont {
+  color: darkgrey;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+#rec-cont {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+#gob-cont {
+  width: 100px;
+}
+
+#logo-cont {
+  height: 90%;
+}
+
+#message-cont {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+p.error {
+  font-weight: 800;
+  font-size: 48px;
+}
+
+p.sorry {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+p.not-found {
+  font-size: 22px;
+}
+
+.error, .sorry, .not-found {
+  margin: 3px;
+}

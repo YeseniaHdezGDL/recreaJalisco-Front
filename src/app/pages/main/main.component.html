@@ -1,0 +1,49 @@
+<div id="main-cont" >
+
+  <div id="mid-cont" fxLayoutAlign="space-around center" fxLayout="column">
+
+    <div class="logo-cont">
+      <img id="gob-cont" src="../../../assets/Jalisco-Gob.png" alt="Gobierno del Estado de Jalisco">
+    </div>
+
+    <div class="logo-cont">
+      <img id="rec-cont" src="../../../assets/ReCrea.png" alt="Recrea Educando para la Vida">
+    </div>
+
+    <mat-card id="login-cont">
+
+      <mat-card-header>
+        <mat-card-title class="login-titles">Ingrese al sistema</mat-card-title>
+      </mat-card-header>
+
+      <form [formGroup]="loginInfo" (ngSubmit)="submit()">
+
+        <mat-form-field>
+          <input class="login-titles" matInput placeholder="Usuario" [(ngModel)]="username" formControlName="username" required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input class="login-titles" matInput placeholder="Contraseña" [(ngModel)]="password" formControlName="password" required type="password">
+        </mat-form-field>
+
+      </form>
+
+      <div>
+        <button mat-raised-button (click)="login()">Ingresar</button>
+      </div>
+
+      <div id="options-cont">
+          <mat-card-subtitle (click)="forgotPassword()">¿Olvidaste tu contraseña?</mat-card-subtitle>
+      </div>
+
+    </mat-card>
+
+    <div id="footer-cont">
+      <p>
+        JALISCO - Gobierno del Estado &copy; {{ currentYear }}
+      </p>
+    </div>
+
+  </div>
+
+</div>

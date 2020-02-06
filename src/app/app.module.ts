@@ -3,21 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { LoginComponent } from './components/login/login.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCardModule, MatInputModule} from '@angular/material';
 import {FlexModule} from '@angular/flex-layout';
-import { NotFoundComponent } from './components/not-found/not-found.component';
+
+
+import { MainComponent } from './pages/main/main.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    FooterComponent,
-    LoginComponent,
+    MainComponent,
     NotFoundComponent
   ],
   imports: [
@@ -28,7 +26,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    FlexModule
+    FlexModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
